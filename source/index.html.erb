@@ -1,10 +1,38 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: UI Form components
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<div id="rounded-form" class="bg-full-height flex-centered bg-white">
+	<div class="container">
+		<div class="small-form-container text-center">
+			<%= image_tag "user.png", class: "img-circle" %>
+			<form action="/">
+				<div class="form-item">
+					<input type="email" name="email" id="email"/>
+					<label for="email">
+						<span class="label-content">Email</span>
+					</label>
+				</div>
+				<div class="form-item">
+					<input type="password" name="password" id="password"/>
+					<label for="password">
+						<span class="label-content">Password</span>
+					</label>
+				</div>
+				<input type="submit" value="Log In">
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="subscribe-form" class="bg-half-height flex-centered bg-green">
+	<div class="container">
+		<div class="large-form-container">
+			<h2 class="text-center">You know you love us!</h2>
+			<form action="" class="flex-centered">
+				<input type="email" name="email" id="email" placeholder="Leave us your email" />
+				<input type="submit" value="GO">
+			</form>
+		</div>
+	</div>
 </div>

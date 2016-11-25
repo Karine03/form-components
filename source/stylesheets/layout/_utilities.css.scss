@@ -11,15 +11,18 @@
 }
 
 // Backgrounds
-.bg-text {
-  background: #4a4a4a;
+.bg-green {
+	background-color: $green;
 }
-.bg-email {
-  background: #aeaeae;
+.bg-red {
+	background-color: $red;
 }
-.bg-twitter {
-  background: #00a3e1;
+.bg-blue {
+	background-color: $blue;
 }
-.bg-facebook {
-  background: #3b5998;
+.bg-black {
+	background-color: $black;
+}
+.bg-white {
+	background-color: $white;
 }
