@@ -7,17 +7,19 @@ title: UI Form components
 		<div class="small-form-container text-center">
 			<%= image_tag "user.png", class: "img-circle" %>
 			<form action="/">
-				<div class="form-item">
-					<input type="email" name="email" id="email"/>
+				<div class="form-item float-label">
+					
 					<label for="email">
 						<span class="label-content">Email</span>
 					</label>
+					<input type="email" name="email" id="email"/>
 				</div>
-				<div class="form-item">
-					<input type="password" name="password" id="password"/>
+				<div class="form-item float-label">
+					
 					<label for="password">
 						<span class="label-content">Password</span>
 					</label>
+					<input type="password" name="password" id="password"/>
 				</div>
 				<input type="submit" value="Log In">
 			</form>
@@ -36,3 +38,106 @@ title: UI Form components
 		</div>
 	</div>
 </div>
+
+<div id="search-form" class="bg-half-height flex-centered bg-black">
+	<div class="container">
+		<div class="large-form-container text-center">
+			<form action="" class="flex-centered">
+				<input type="text" name="email" id="email" placeholder="Where are you going ?" />
+				<input type="submit" value="Search">
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="user-form" class="bg-full-height flex-centered bg-blue">
+	<div class="container">
+		<div class="large-form-container text-center">
+			<%= image_tag "rocket.png", class: "img-circle" %>
+			<form action="">
+				<div class="flex-middle">
+					<h2>1/ Choose your gender:</h2>
+					<div class="checkboxes">
+						<input type="radio" name="gender" id="mme"/>
+						<label for="mme">
+							W
+						</label>
+						<input type="radio" name="gender" id="mr"/>
+						<label for="mr">
+							M
+						</label>
+					</div>
+				</div>
+				<h2>2/ What about your basic info ?</h2>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-item float-label">				
+							<label for="first_name">
+								<span class="label-content">First Name</span>
+							</label>
+							<input type="text" name="first_name" id="first_name"/>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="form-item float-label">		
+							<label for="last_name">
+								<span class="label-content">Last Name</span>
+							</label>
+							<input type="text" name="last_name" id="last_name"/>
+						</div>
+					</div>
+				</div>
+				<h2>3/ 	Show me your face!</h2>
+			 	<div class="import-file-container">
+			 		<label for="file-upload">
+			 			<i class="fa fa-upload"></i>
+			 		</label>
+			 		<input type="file" id="file-upload">
+					<p class="file-return"></p>
+				</div>
+				<div class="text-right">
+					<input type="submit" value="Save">
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- <form action="/">
+	<div class="flex">
+		<div class="checkbox">
+			<input type="checkbox" id="mme"/>
+			<label for="mme">Ms.</label>
+			<input type="checkbox" id="mr"/>
+			<label for="mr">Mr.</label>
+		</div>
+
+		<div class="form-item float-label">
+			
+			<label for="firt_name">
+				<span class="label-content">First Name</span>
+			</label>
+			<input type="text" name="firt_name" id="firt_name"/>
+		</div>
+
+		<div class="form-item float-label">
+			
+			<label for="last_name">
+				<span class="label-content">Last Name</span>
+			</label>
+			<input type="text" name="last_name" id="last_name"/>
+		</div>
+	</div>	
+		<div class="form-item float-label">	
+
+		<label for="email">
+			<span class="label-content">Email</span>
+		</label>
+		<input type="email" name="email" id="email"/>
+	</div>
+
+
+	<input type="submit" value="Log In">
+</form> -->

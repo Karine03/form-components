@@ -1,15 +1,19 @@
 .bg-full-height {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .bg-half-height {
-	height: 50vh;
+	min-height: 50vh;
 }
 
 .flex-centered {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.flex-middle {
+	display: flex;
+	align-items: center;
 }
 .flex-column {
 	flex-direction: column;
