@@ -88,3 +88,38 @@
 		}
 	}
 }
+
+// file upload 
+
+.import-file-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.import-file-container input[type=file] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 14px 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.import-file-container label {
+  padding: 14px 45px;
+  background: $blue;
+  color: white;
+  font-size: 13px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.import-file-container .file-return {
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-style: italic;
+  font-weight: 600;
+}
