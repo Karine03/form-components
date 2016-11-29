@@ -90,9 +90,10 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
-helpers do
+activate :syntax
 
+helpers do
   def github_sass_url(file)
-    "https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_#{file}.scss"
+    "https://raw.githubusercontent.com/Karine03/form-components/master/source/stylesheets/components/_#{file}.scss"
   end
 end

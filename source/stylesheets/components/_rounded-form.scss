@@ -1,0 +1,50 @@
+#rounded-form {
+	.small-form-container {
+		background-color: $black;
+		padding-top: 0;
+		border-radius: 5px;
+		img {
+			width: 150px;
+			transform: translateY(-50%);
+		}
+	}
+	form {
+		margin-top: -20px;
+	}
+	input {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		height: 50px;
+		border-radius: 50px;
+		border: none;
+		padding: 0 20px;
+		background-color: lighten($black, 10%);
+		color: $white;
+		&:focus {
+			box-shadow: none;
+			outline: none;
+		}
+	}
+	label {
+		position: absolute;
+		left: 20px;
+		top: 15px;
+		transition: transform 0.3s;
+		font-size: 14px;
+		font-weight: lighter;
+		margin-bottom: 0;
+		color: lighten($black, 50%);
+		&.active {
+			transform: scale3d(0.81, 0.81, 1) translate3d(-20px, 3.2em, 0);
+		}
+	}
+	input[type=submit] {
+		background-color: $orange;
+		color: white;
+		&:hover {
+			background-color: darken($orange, 5%);
+		}	
+	}
+
+}
